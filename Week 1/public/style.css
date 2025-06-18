@@ -1,0 +1,157 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  background-color: rgb(7, 15, 43);
+  line-height: 1.8;
+  font-size: 19px;
+  overflow-x: hidden;
+}
+
+.font{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 19px;
+}
+
+header {
+  background-color: rgb(27, 26, 85);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: rgb(83, 92, 145);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover{
+  text-decoration: underline;
+  background-color: rgb(27, 26, 85);
+  border-radius: 10px;
+}
+
+
+main {
+  padding: 20px;
+}
+
+.section {
+  background-color: rgb(250, 240, 230);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: auto; /* to clear floats */
+  text-align: center;
+}
+
+.section img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.section.left img {
+  float: left;
+  margin-right: 20px;
+}
+
+.section.right img {
+  float: right;
+  margin-left: 20px;
+}
+
+.section-content {
+  overflow: hidden; /* ensure text wraps around image nicely */
+  /* padding-top; */
+}
+
+.section-content h2,
+.section-content p {
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+details {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: rgb(160, 169, 218);
+  border-radius: 6px;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.friends {
+  text-align: center;
+  padding: 30px;
+  background-color: rgb(250, 240, 230);
+  border-radius: 10px;
+}
+
+.friend-gallery {
+  overflow: auto;
+  margin-top: 15px;
+  
+}
+
+.friend-gallery img {
+  width: 31% ;
+  height: 31%;
+  object-fit: cover;
+  margin: 10px;
+  float: left;
+}
+
+footer {
+  background-color: #003262;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+html {
+  scroll-padding-top: 80px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button{
+  background-color: rgb(160, 169, 218);
+  border-radius: 10%;
+}
